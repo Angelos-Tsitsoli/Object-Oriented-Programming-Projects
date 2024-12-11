@@ -28,7 +28,8 @@ Bad creatures, when blessed and in a sufficiently healthy state, clone themselve
 
 # Java Exercise
 ## Description
-This exercise requires you to implement the following hierarchy of artifacts in Java. An artifact has an index number, a creator, and a creation year, all of which are assigned initially and remain constant. Additionally, the artifact has two methods:
+This exercise tests a combination of object-oriented programming concepts, including inheritance, polymorphism, encapsulation, and abstraction. It also involves implementing conditional logic, managing data input/output, and manipulating collections of objects.
+This exercise required me to implement the following hierarchy of artifacts in Java. An artifact has an index number, a creator, and a creation year, all of which are assigned initially and remain constant. Additionally, the artifact has two methods:
 
 * getInfo(): This method prints the creator and the creation year of the artifact.
 * getIndex(): This method prints only the index number of the artifact.
