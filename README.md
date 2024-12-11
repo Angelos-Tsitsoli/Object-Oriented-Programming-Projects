@@ -33,3 +33,19 @@ This exercise requires you to implement the following hierarchy of artifacts in 
 * getInfo(): This method prints the creator and the creation year of the artifact.
 * getIndex(): This method prints only the index number of the artifact.
 The task involves creating a class to represent an artifact with these attributes and methods, ensuring the values for the index, creator, and year are immutable once assigned. This exercise will help you practice the principles of class design, encapsulation, and method implementation in Java.
+
+# Project
+## Description
+This exercise involves simulating a hypothetical one-way operation of the Attiki Odos highway in C++. The simulation will include the following details:
+
+* The highway has an initial node (entry), a final node (exit), and a set of intermediate nodes.
+* Vehicles can enter only at the initial node and exit only at the final node. Intermediate nodes allow both entry and exit of vehicles.
+* The highway consists of NSegs segments between nodes, with each segment having a defined capacity (maximum number of vehicles it can hold at once).
+* Each node, except the final one, has toll booths for vehicle entry into the segment starting from that node. The number of toll booths and their types (manual or electronic) can vary across nodes.
+* Vehicles may be in different states: either ready to exit (if they are at the correct segment and their destination is the current exit), or staying in the segment for the next round. The simulation will also track vehicles waiting to enter a segment at toll booths.
+* For each segment, a percentage (PPercent) of the vehicles in the segment may transition to "ready to exit" status, based on the current situation.
+The simulation runs in reverse order, starting from the final segment and working back towards the initial node. Vehicles with the destination of the final node exit first. Then, vehicles ready to enter from the previous segment will move into the current segment, provided the capacity allows. The simulation respects the segment capacities and manages the number of vehicles entering from the toll booths. Manual toll booths allow up to K vehicles to enter, while electronic booths allow up to 2K vehicles, without exceeding the segment capacity.
+
+In each cycle, the simulation will adjust the number of vehicles allowed to enter based on the capacity and update the toll booth entry limits (K). If the maximum number of vehicles enter a segment, the value of K will increase for the next cycle. Conversely, if fewer vehicles enter, K will decrease.
+
+This exercise requires a solid understanding of C++ classes, data structures, and simulating a dynamic system with constraints such as capacity, toll booth types, and vehicle management.
