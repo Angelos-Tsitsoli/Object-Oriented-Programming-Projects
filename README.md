@@ -6,9 +6,14 @@ This collection of exercises aims to reinforce foundational concepts of Object-O
 
 # Exercise #1 (Library), Exercise #2 (Bank)
 ## Description
-This exercise aims to practice the fundamental concepts of class composition, constructors and destructors, as well as the accessibility and scope of class members in C++. In this exercise, i was  required to implement a simulation of a library's functionality, which consists of a base, a cupboard, and three shelves. The cupboard contains two internal shelves, and each shelf hosts books. Each book includes its title, the author's full name, and its ISBN.
+This Library exercise aims to practice the fundamental concepts of class composition, constructors and destructors, as well as the accessibility and scope of class members in C++. In this exercise, i was  required to implement a simulation of a library's functionality, which consists of a base, a cupboard, and three shelves. The cupboard contains two internal shelves, and each shelf hosts books. Each book includes its title, the author's full name, and its ISBN.
 The library provides functionality for placing books on specific shelves, removing books from them, and printing the current status of the library with the books it contains. Each class has a constructor that prints related messages during the creation of the object (e.g., "a library is being created") and a destructor that prints messages when the object is destroyed.
 
+The bank serves customers through its cashiers, where each customer is assigned a priority number upon entry. The simulation involves two primary classes: Bank and Cashier.
+The **Bank** class manages customer entry and service by keeping track of a counter for the last customer and a serving indicator for the current customer. It is responsible for opening and closing cashiers based on the number of customers waiting and ensures that there are enough open cashiers to handle the demand. If there are not enough cashiers available, the bank will open new ones, but if all cashiers are occupied, it will prevent further customer entry.
+The **Cashier** class tracks whether a cashier is open or closed, whether it is serving a customer, and the number of customers served consecutively. If a cashier reaches a specified threshold for the number of customers served, it is closed automatically.
+The main function initializes the bank and runs the simulation by processing customers in multiple service rounds. During these rounds, the bank dynamically adjusts the number of open cashiers and serves as many customers as possible. The simulation parameters, such as the number of customers (N), the number of service rounds (M), the threshold for opening or closing cashiers (K), and the maximum number of customers a cashier can serve before closing (L), are provided as input.
+This simulation ensures that customers are served efficiently, and the number of open cashiers adjusts based on the demand and the system's capacity.
 
 
 # Exercise #3
